@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  background-color: rgb(19, 19, 19);
+  gap: 30px;
+}
+
+.box {
+  width: 70px;
+  height: 70px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.box.checked {
+  cursor: no-drop;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+}
+
+.box.checked.checked-o::before {
+  content: "O";
+}
+
+.box.checked.checked-x::before {
+  content: "X";
+}
+
+#container {
+  display: grid;
+}
+
+#lengthToe {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+}
